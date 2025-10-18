@@ -1,138 +1,113 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UKRAINIAN AXES — Особистий кабінет</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Особистий кабінет | UKRAINIAN AXES</title>
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", sans-serif;
-      background: radial-gradient(circle at center, #111 0%, #000 100%);
-      color: #f8d24b;
+      background: radial-gradient(circle at top, #1c1c1c, #000);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      min-height: 100vh;
-      padding: 30px 15px;
+      height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(6px);
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #ffcc00;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .logo {
-      margin-top: 20px;
-      font-size: 26px;
-      font-weight: 800;
-      text-align: center;
-      letter-spacing: 1px;
-      text-shadow: 0 0 10px #f8d24b;
+      width: 110px;
+      margin: 25px auto 15px;
+      filter: drop-shadow(0 0 10px #ffcc00);
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 215, 0, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 16px;
       padding: 20px;
-      width: 100%;
-      max-width: 360px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
-      margin-top: 25px;
-      text-align: center;
+      width: 85%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
     }
 
-    .avatar {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      border: 2px solid #f8d24b;
-      margin: 10px auto;
-      background: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Axe_icon.png') center/contain no-repeat;
-    }
-
-    .nickname {
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
+    .info {
+      text-align: left;
       margin-top: 10px;
-    }
-
-    .rank {
       font-size: 16px;
-      color: #f8d24b;
-      margin-top: 5px;
+      line-height: 1.7em;
     }
 
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      margin: 20px 0;
+    .label {
+      color: #aaa;
     }
 
-    .stat {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .stat span:first-child {
-      font-size: 18px;
-      color: #fff;
-    }
-
-    .stat span:last-child {
-      font-size: 12px;
-      color: #f8d24b;
-      opacity: 0.8;
-    }
-
-    .btn {
-      background: linear-gradient(90deg, #f8d24b, #c6a300);
-      color: #000;
+    .value {
       font-weight: bold;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.2s;
+      color: #ffcc00;
     }
 
-    .btn:hover {
+    button {
+      margin-top: 25px;
+      padding: 12px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      background: #ffcc00;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ffcc00a8;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: #ffd633;
       transform: scale(1.05);
-      background: linear-gradient(90deg, #ffd84f, #e6b800);
     }
 
     footer {
-      margin-top: 30px;
-      font-size: 12px;
-      color: #666;
+      margin-top: auto;
+      padding: 15px;
+      font-size: 13px;
+      opacity: 0.5;
     }
   </style>
 </head>
 <body>
-  <div class="logo">🪓 UKRAINIAN AXES 🪓<br><small>Особистий кабінет учасника</small></div>
+  <header>UKRAINIAN AXES ⚔️</header>
+  <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Coat_of_arms_of_Ukraine.svg" alt="logo">
 
   <div class="card">
-    <div class="avatar"></div>
-    <div class="nickname">@YourNick</div>
-    <div class="rank">Ранг: Захисник</div>
-
-    <div class="stats">
-      <div class="stat">
-        <span>120</span>
-        <span>Балів</span>
-      </div>
-      <div class="stat">
-        <span>5</span>
-        <span>Завдань</span>
-      </div>
-      <div class="stat">
-        <span>3</span>
-        <span>Рівень</span>
-      </div>
+    <div class="info">
+      <div><span class="label">Нік:</span> <span class="value">Topor</span></div>
+      <div><span class="label">Статус:</span> <span class="value">Активний</span></div>
+      <div><span class="label">Бали:</span> <span class="value">1240</span></div>
     </div>
-
-    <button class="btn">Отримати бонус 🎁</button>
+    <button onclick="getBonus()">🎁 Отримати бонус</button>
   </div>
 
-  <footer>© 2025 UKRAINIAN AXES | Mini App by UA</footer>
+  <footer>© 2025 Ukrainian Axes | Million Lords</footer>
+
+  <script>
+    function getBonus() {
+      alert("✅ Бонус нараховано! Гарна робота, воїне!");
+    }
+  </script>
 </body>
 </html>
